@@ -2,8 +2,15 @@ package com.ruiznavas.filesharing.exceptions;
 
 public class FileSharingException extends RuntimeException {
 
-	public FileSharingException(String string) {
-		// TODO Auto-generated constructor stu
+	private static final long serialVersionUID = 1L;
+	private String msg;
+
+	public FileSharingException(String msg) {
+		this.msg = msg;
+	}
+
+	public String getMsg() {
+		return msg;
 	}
 
 }
